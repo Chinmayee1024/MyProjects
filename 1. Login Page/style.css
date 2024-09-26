@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: blueviolet; */
+  background-image:url('https://wallpapersmug.com/download/1600x900/1fdcf1/gradient-purple-blue.jpg');
+  
+}
+
+.container {
+  width: 20rem;
+  margin: 1rem;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow:  rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background-color:blanchedalmond; 
+}
+
+.container h2 {
+  margin-bottom: 2rem;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container form label {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.container form input {
+  width: 16rem;
+  outline: none;
+  padding: 5px 10px;
+  margin-bottom: 1rem;
+  border: 1px solid rgb(133, 129, 129);
+}
+
+button {
+  border: none;
+  color: #fff;
+  margin: 1rem 0;
+  font-size: 18px;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5rem;
+  background: linear-gradient(to right, blue, rgb(0, 213, 255));
+}
+
+.newUser span {
+  color: rgb(43, 25, 176);
+  cursor: pointer;
+}

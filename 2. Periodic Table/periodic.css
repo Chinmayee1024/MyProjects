@@ -1,0 +1,67 @@
+
+table{
+    border: none;
+    margin-left: 150px;
+}
+body{
+    background-color: blanchedalmond;
+
+}
+h1{
+ text-align: center;
+ font-family: Arial, Helvetica, sans-serif;
+font-size: 60px;
+ font-weight: bold;
+ background-color: white;
+}
+td{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+ 
+}
+td:hover{
+    transform: scale(1.3);  
+}
+
+.box{
+    border: 2px solid black;
+    border-radius: 5px;
+    color:white;
+    font-weight: bold;
+    font-size: large;
+    box-shadow: 7px 5px 10px  black;
+}
+#alkali-metals{
+    background-color: red;
+}
+#diatomic-nonmetal{
+    background-color: green;
+}
+#AlkalineEarthMetals{
+    background-color: orange;
+}
+#Transition-Metals{
+    background-color: rgb(3, 112, 155);
+}
+#Lanthanide{
+    background-color: rgb(89, 5, 168);
+}
+#Actinide{
+    background-color: rgb(228, 8, 129);
+}
+#Polyatomic-Nonmetal{
+    background-color:rgb(125, 245, 125);
+}
+#Metalloid{
+    background-color: rgb(224, 138, 24);
+}
+#Noble-Gas{
+    background-color: rgb(7, 245, 245);
+}
+#Post-Transition-Metal{
+    background-color: rgb(3, 85, 85);
+}
+#Unknown-Chemical-Properties{
+    background-color: rgb(146, 139, 139);
+}
