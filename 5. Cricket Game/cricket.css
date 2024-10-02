@@ -1,38 +1,15 @@
 body {
   margin-top: 50px;
   text-align: center;
-  background-color: aquamarine;
+  background-color:mistyrose;
 }
 h1 {
   margin-bottom: 50px;
   font-size: 50px;
 }
 
-#btn1 {
-  background-color: red;
-}
-#btn1:hover {
-  background-color: rgb(121, 3, 3);
-}
-#btn2 {
-  background-color: blue;
-}
-#btn2:hover {
-  background-color: rgb(8, 8, 165);
-}
-#btn3 {
-  background-color: yellowgreen;
-}
-#btn3:hover {
-  background-color: rgb(104, 150, 12);
-}
 #btn4 {
   background-color: grey;
-}
-#btn4:hover {
-  background-color: rgb(105, 94, 94);
-}
-.btn {
   margin: 15px;
   padding: 10px;
   width: 15%;
@@ -42,8 +19,29 @@ h1 {
   font-size: 15px;
   font-weight: bolder;
 }
-.btn:hover {
+
+#btn4:hover {
   transform: scale(1.04);
   color: white;
+  background-color: rgb(105, 94, 94);
+}
+.choiceImage {
+  height: 100px;
+  width: 100px;
+  /* background-color: aqua; */
+}
+.choiceBtn {
+  margin: 15px;
+  height: 110px;
+  width: 110px;
+  border: none;
+border-radius: 20px;
+  background-color: rgb(79, 245, 63);
+  cursor: pointer;
+  box-shadow: 10px 10px  10px black;
   
 }
+.choiceBtn:hover{
+  transform: scale(1.05);
+}
+

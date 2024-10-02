@@ -8,27 +8,34 @@
   </head>
   <body>
     <h1>Bat Ball Stump Game</h1>
-    <button id="btn1" class="btn" onclick=" 
+    
+  
+   
+    <button  class="choiceBtn" onclick=" 
     let computerChoice=generateComputerChoice();
     let winningMsg =getWinner(`Bat`, computerChoice);
     displayWinner(`Bat`,computerChoice,winningMsg);
-  ">Bat</button>
+  "><img src="./bat.png" alt="Bat images" class="choiceImage" id="bat"></button>
     
-    <button id="btn2" class="btn" onclick="
+    <button class="choiceBtn" onclick="
    computerChoice=generateComputerChoice();
     winningMsg =getWinner(`Ball`, computerChoice);
     displayWinner(`Ball`,computerChoice,winningMsg);
-  ">Ball</button>
+  ">  <img src="./ball.png" alt="Ball images" class="choiceImage" id="ball"></button>
    
-   <button id="btn3" class="btn" onclick="
+   <button  class="choiceBtn" onclick="
    computerChoice=generateComputerChoice();
     winningMsg =getWinner(`Stump`, computerChoice);
     displayWinner(`Stump`,computerChoice,winningMsg);
- ">Stump</button>
-<div id="reset">
- <button id="btn4" class="btn" onclick="localStorage.clear();
-resetScore(scoreStr);">Reset</button></div>
+ "> <img src="./stump.png" alt="Stump image" class="choiceImage"></button>
 
+<h3 id="userMove"></h3>
+<h3 id="computerMove"></h3>
+<h3 id="result"></h3>
+<h3 id="score"></h3>
+<div id="reset">
+  <button id="btn4"  onclick="localStorage.clear();
+ resetScore(scoreStr);">Reset</button></div>
     <script src="./cricket.js"></script>
   </body>
 </html>
