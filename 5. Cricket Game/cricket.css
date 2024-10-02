@@ -1,0 +1,49 @@
+body {
+  margin-top: 50px;
+  text-align: center;
+  background-color: aquamarine;
+}
+h1 {
+  margin-bottom: 50px;
+  font-size: 50px;
+}
+
+#btn1 {
+  background-color: red;
+}
+#btn1:hover {
+  background-color: rgb(121, 3, 3);
+}
+#btn2 {
+  background-color: blue;
+}
+#btn2:hover {
+  background-color: rgb(8, 8, 165);
+}
+#btn3 {
+  background-color: yellowgreen;
+}
+#btn3:hover {
+  background-color: rgb(104, 150, 12);
+}
+#btn4 {
+  background-color: grey;
+}
+#btn4:hover {
+  background-color: rgb(105, 94, 94);
+}
+.btn {
+  margin: 15px;
+  padding: 10px;
+  width: 15%;
+  border: 2px solid black;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  font-weight: bolder;
+}
+.btn:hover {
+  transform: scale(1.04);
+  color: white;
+  
+}
