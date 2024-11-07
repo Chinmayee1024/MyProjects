@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapper {
+  background: linear-gradient(to right, #ff0080, #ff8c00, #03f4db);
+
+  max-width: 80%;
+  padding: 7rem 8rem;
+  box-shadow: 0px 0px 4px 0.5px black;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.wrapper h1 {
+  color: #000;
+  font-size: 43px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 0px black;
+  letter-spacing: 2px;
+}
+
+.wrapper .captcha-area {
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65px;
+  margin: 30px 0 20px;
+}
+
+.captcha-area .captcha-container {
+  height: 100%;
+  width: 350px;
+  user-select: none;
+  background-color: #000;
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid black;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.captcha-container .captcha {
+  position: absolute;
+  left: 60%;
+  top: 50%;
+  width: 100%;
+  color: #fff;
+  font-size: 35px;
+  letter-spacing: 10px;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 0 2px #b1b1b1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper button {
+  border: none;
+  outline: none;
+  color: #041897;
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: 0px 0px 1px 0.5px black;
+  border-radius: 2px;
+}
+
+.captcha-area .reload-btn {
+  border-radius: 5px;
+  width: 75px;
+  height: 100%;
+  font-size: 23px;
+  margin-left: 20px;
+  box-shadow: 0px 0px 0px 0.5px black;
+}
+
+.captcha-area i {
+  transition: transform 0.3s ease;
+}
+
+.input-area .reload-btn:hover i {
+  transform: rotate(15deg);
+}
+
+.wrapper .input-area {
+  height: 60px;
+  width: 100%;
+  position: relative;
+}
+
+.input-area input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 20px;
+  padding-left: 20px;
+  border-radius: 5px;
+  border: 1px solid #080808;
+  box-shadow: inset 0 0 0 1;
+}
+
+.input-area .check-btn {
+  position: absolute;
+  right: 7px;
+  top: 50%;
+  font-size: 17px;
+  height: 45px;
+  padding: 0 20px;
+  opacity: 0;
+  pointer-events: none;
+  background-color: blue;
+  color: #fff;
+  transform: translateY(-50%);
+}
+
+.input-area input:valid + .check-btn {
+  opacity: 1;
+  pointer-events: auto;
+}
+.wrapper .status-text {
+  display: none;
+  font-size: 25px;
+  text-align: center;
+  margin: 20px 0 -5px 0;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+}

@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #2f363e;
+}
+
+.container {
+  position: relative;
+  /* min-height: 500px; */
+  background-color: #2f363e;
+  border-radius: 20px;
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.75),
+    10px 10px 70px rgba(0, 0, 0, 0.25), inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+  border-top-left-radius: 250px;
+  border-top-right-radius: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.clock {
+  position: relative;
+  height: 450px;
+  width: 450px;
+  background-color: #2f363e;
+  border-radius: 50%;
+  box-shadow: 10px 50px 70px rgba(0, 0, 0, 0.25),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.clock::before {
+  content: "";
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  background-color: #2f363e;
+  z-index: 1000;
+}
+.clock span {
+  position: absolute;
+  inset: 20px;
+  color: #fff;
+  text-align: center;
+  transform: rotate(calc(30deg * var(--i)));
+}
+.clock span b {
+  font-size: 2em;
+  opacity: 0.25;
+  font-weight: 600;
+  display: inline-block;
+  transform: rotate(calc(-30deg * var(--i)));
+}
+.circle {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 10;
+}
+
+.circle i {
+  position: absolute;
+  width: 6px;
+  height: 50%;
+  background-color: var(--clr);
+  opacity: 0.75;
+  transform-origin: bottom;
+  transform: scaleY(0.5);
+}
+.circle:nth-child(1) i {
+  width: 2px;
+}
+.circle:nth-child(2) i {
+  width: 6px;
+}
+.circle:nth-child(3) i {
+  width: 10px;
+}
+.circle2 {
+  width: 240px;
+  height: 240px;
+  z-index: 9;
+}
+.circle3 {
+  width: 180px;
+  height: 180px;
+  z-index: 8;
+}
+
+.circle::before {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  background-color: var(--clr);
+  border-radius: 50%;
+  box-shadow: 2px 2px 20px var(--clr), 0 0 60px var(--clr);
+  top: -8.5px;
+}
+
+/* Digital clock  style*/
+
+#time {
+  margin-bottom: 40px;
+  display: flex;
+  padding: 10px 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 40px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+}
+
+#time div {
+  position: relative;
+  width: 60px;
+  text-align: center;
+  font-weight: 500;
+  color: var(--clr);
+}
+
+#time div:nth-child(1)::after,
+#time div:nth-child(2)::after {
+  content: ":";
+  position: absolute;
+  right: -4px;
+  top: -3px;
+}
+#time div:last-child {
+  font-size: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+#time div:nth-child(2)::after {
+  animation: animate 1s steps(1) infinite;
+}
+@keyframes animate {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

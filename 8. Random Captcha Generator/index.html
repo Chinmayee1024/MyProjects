@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random captcha Generator</title>
+  <link rel="stylesheet" href="./style.css">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> 
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Random captcha</h1>
+    <div class="captcha-area">
+      <div class="captcha-container">
+        <span class="captcha"></span>
+      </div>
+      <button class="reload-btn">
+        <i class="fa fa-redo"></i>
+      </button>
+    </div>
+    <form action="" class="input-area">
+      <input type="text" placeholder="Enter Captcha" required>
+      <button class="check-btn">Check</button>
+    </form>
+    <div class="status-text"></div>
+  </div>
+
+  <script src="./Script.js"></script>
+</body>
+</html>
