@@ -2,19 +2,21 @@ body{
   background-color: black;
 }
 #calculator{
-  border: 1px solid rgb(24, 156, 196);
-  background-color: white;
-  height: 80vh;
+  border: 1px solid rgb(51, 51, 50);
+  background-color: transparent;
+  height: 65vh;
   width: 43vh;
   border-radius: 10px;
   margin: auto;
   margin-top: 10vh;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 #display{
 margin: 20px ;
-width: 82%;
-font-size: 35px;
+width: 85%;
+font-size: 40px;
 border: 2px solid black;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .BtnContainer{
   display: flex;
@@ -24,12 +26,27 @@ border: 2px solid black;
 
 }
 .button{
-  height: 60px;
-  width: 60px;
+  height: 70px;
+  width: 70px;
   margin: 5px;
   border: 2px solid black;
-  border-radius:5px ;
-  font-size: 40px;
+  border-radius:15px ;
+  font-size: 30px;
   font-weight: bolder;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 
+}
+.arithmatic{
+  background-color: rgb(106, 104, 104);
+  color: rgb(2, 253, 2);
+  font-weight: bold;
+  font-size: 35px;
+}
+#equal
+{
+background-color: green;
+color: white;
+}
+#clear{
+  color: red;
 }

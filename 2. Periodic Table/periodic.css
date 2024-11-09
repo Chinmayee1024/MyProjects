@@ -1,67 +1,75 @@
 
-table{
-    border: none;
-    margin-left: 150px;
-}
-body{
-    background-color: blanchedalmond;
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-h1{
- text-align: center;
- font-family: Arial, Helvetica, sans-serif;
-font-size: 60px;
- font-weight: bold;
- background-color: white;
+
+table {
+  border: none;
 }
-td{
-    height: 50px;
-    width: 50px;
-    text-align: center;
+body {
+  background-color: blanchedalmond;
+  display: grid;
+  place-items: center;
+}
+h1 {
+  text-align: center;
  
+  font-size: 60px;
+  font-weight: bold;
+ 
+  font-family: "Bungee Spice", serif;
 }
-td:hover{
-    transform: scale(1.3);  
+td {
+  height: 60px;
+  width: 60px;
+  text-align: center;
+}
+td:hover {
+  transform: scale(1.3);
 }
 
-.box{
-    border: 2px solid black;
-    border-radius: 5px;
-    color:white;
-    font-weight: bold;
-    font-size: large;
-    box-shadow: 7px 5px 10px  black;
+.box {
+  border: 2px solid black;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
-#alkali-metals{
-    background-color: red;
+#alkali-metals {
+  background-color: red;
 }
-#diatomic-nonmetal{
-    background-color: green;
+#diatomic-nonmetal {
+  background-color: green;
 }
-#AlkalineEarthMetals{
-    background-color: orange;
+#AlkalineEarthMetals {
+  background-color: orange;
 }
-#Transition-Metals{
-    background-color: rgb(3, 112, 155);
+#Transition-Metals {
+  background-color: rgb(3, 112, 155);
 }
-#Lanthanide{
-    background-color: rgb(89, 5, 168);
+#Lanthanide {
+  background-color: rgb(89, 5, 168);
 }
-#Actinide{
-    background-color: rgb(228, 8, 129);
+#Actinide {
+  background-color: rgb(228, 8, 129);
 }
-#Polyatomic-Nonmetal{
-    background-color:rgb(125, 245, 125);
+#Polyatomic-Nonmetal {
+  background-color: rgb(125, 245, 125);
 }
-#Metalloid{
-    background-color: rgb(224, 138, 24);
+#Metalloid {
+  background-color: rgb(224, 138, 24);
 }
-#Noble-Gas{
-    background-color: rgb(7, 245, 245);
+#Noble-Gas {
+  background-color: rgb(7, 245, 245);
 }
-#Post-Transition-Metal{
-    background-color: rgb(3, 85, 85);
+#Post-Transition-Metal {
+  background-color: rgb(3, 85, 85);
 }
-#Unknown-Chemical-Properties{
-    background-color: rgb(146, 139, 139);
+#Unknown-Chemical-Properties {
+  background-color: rgb(146, 139, 139);
 }
